@@ -1,7 +1,5 @@
 import react from "react";
 
-import { Link } from "react-router-dom";
-
 import RoundedTextField from "./RoundedTextField";
 import ControlButton from "./ControlButton";
 
