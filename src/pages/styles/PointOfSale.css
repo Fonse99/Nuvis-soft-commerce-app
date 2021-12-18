@@ -1,0 +1,11 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(117.57deg, #0331D6 8.16%,
+            rgba(36, 211, 159, 0.18) 88.23%);
+}
+
+#controls {
+    width: inherit;
+    align-items: flex-end;
+}

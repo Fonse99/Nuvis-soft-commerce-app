@@ -1,6 +1,15 @@
 import react from "react";
 import Header from "../components/base/Header";
-import Table from "../components/Table";
+import Table, { TableBody, TableFooter, TableHeader, TableRow } from "../components/Table";
+
+import ControlButton from "../components/ControlButton";
+import "./styles/PointOfSale.css"
+
+const columns =
+    ["Product", "Code", "Price", "Quantity", "Amount"];
+const footerFields =
+    ["Product Quantity", "Discount", "Subtotal", "Grand Total"];
+
 
 const PointOfSale = () => {
 
@@ -9,9 +18,23 @@ const PointOfSale = () => {
         <div>
             <Header />
 
-            <div>
-                <Table />
+            <div className={"table-container"}>
+
+                <Table>
+                    <TableHeader headers={columns} />
+
+                    <TableBody>
+                        {/* Example rows*/}
+                        <TableRow />
+                        <TableRow />
+                        <TableRow />
+                        <TableRow />
+                    </TableBody>
+
+                    <TableFooter fields={footerFields} />
+                </Table>
             </div>
+
         </div>
 
     )
