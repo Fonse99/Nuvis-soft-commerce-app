@@ -1,0 +1,90 @@
+:root {
+    --primary-blue: #12438C;
+    --primary-yellow: #FFF614;
+    --secondary-blue: #1C84BF;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 500px;
+    width: 1200px;
+    margin-block: 15px;
+    margin-inline: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.table-header {
+    box-shadow: 0px 4px 4px 0px rgb(68, 68, 68);
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header-content {
+    position: relative;
+    left: 5px;
+    display: flex;
+    height: inherit;
+    width: 1190px;
+    justify-content: space-around;
+}
+
+.table-body {
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.table-item {
+    margin-top: 10px;
+    width: 1190px;
+    height: 50px;
+    background-color: var(--secondary-blue);
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px 0px gray;
+    margin-inline: auto;
+}
+
+.table-footer {
+    position: relative;
+    height: 50px;
+    box-shadow: 0px -4px 4px 0px rgb(68, 68, 68);
+}
+
+.table-header, .table-footer {
+    background-color: var(--primary-blue);
+    width: 1210px;
+    position: relative;
+    right: 5px;
+}
+
+.item-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#row {
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+}
+
+.item-icon {
+    width: 30px;
+}
+
+.qty-field {
+    border: none;
+    font-weight: bold;
+    width: 3em;
+    color: white;
+    background-color: transparent;
+}
